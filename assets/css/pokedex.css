@@ -189,3 +189,85 @@
         grid-template-columns: 1fr 1fr 1fr 1fr;
     }
 }
+
+.mode-toggle {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    color: #000;
+}
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 40px;
+    height: 20px;
+    margin-left: 10px; /* Espaçamento entre o botão e o Pokedex */
+}
+
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 16px;
+    width: 16px;
+    left: 2px;
+    bottom: 2px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+input:checked + .slider {
+    background-color: #2196F3;
+}
+
+input:focus + .slider {
+    box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slider:before {
+    -webkit-transform: translateX(20px);
+    -ms-transform: translateX(20px);
+    transform: translateX(20px);
+}
+
+/* Estilizando o texto do modo noturno */
+#modeLabel {
+    margin-left: 10px;
+}
+
+/* Estilos para o modo noturno */
+.dark-mode {
+    background-color: #1a1a1a; /* Cor de fundo para o modo noturno */
+    color: #fff; /* Cor do texto para o modo noturno */
+}
+
+.dark-mode {
+    background-color: #1a1a1a; /* Cor de fundo para o modo noturno */
+    color: #fff; /* Cor do texto para o modo noturno */
+}
+
+.dark-mode .content {
+    background-color: #333; /* Adicione a cor cinza desejada para a classe content no modo noturno */
+}
