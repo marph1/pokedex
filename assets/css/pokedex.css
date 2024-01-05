@@ -6,6 +6,13 @@
     list-style: none;
 }
 
+.title {
+    text-align: left;
+    color: #000;
+    /* color: #fff; */
+    text-shadow: #6f38f6 1.5px .75px;
+}
+
 .normal {
     background-color: #a6a877;
 }

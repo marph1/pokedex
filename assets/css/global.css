@@ -5,6 +5,7 @@
 
 body {
     background-color: #f6f8fc;
+    /* background-color: rgba(0, 0, 0, 0.945); */
 }
 
 .content {
@@ -12,6 +13,7 @@ body {
     height: 100vh;
     padding: 1rem;
     background-color: #fff;
+    /* background-color: rgba(52, 52, 52, 0.632) */
 }
 
 @media screen and (min-width: 992px) {
