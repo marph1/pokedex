@@ -205,7 +205,7 @@
     display: inline-block;
     width: 40px;
     height: 20px;
-    margin-left: 10px; /* Espaçamento entre o botão e o Pokedex */
+    margin-left: 10px; 
 }
 
 .switch input {
@@ -252,22 +252,23 @@ input:checked + .slider:before {
     transform: translateX(20px);
 }
 
-/* Estilizando o texto do modo noturno */
 #modeLabel {
     margin-left: 10px;
 }
 
-/* Estilos para o modo noturno */
 .dark-mode {
-    background-color: #1a1a1a; /* Cor de fundo para o modo noturno */
-    color: #fff; /* Cor do texto para o modo noturno */
+    background-color: #1a1a1a;
+    color: #fff;
 }
 
 .dark-mode {
-    background-color: #1a1a1a; /* Cor de fundo para o modo noturno */
-    color: #fff; /* Cor do texto para o modo noturno */
+    background-color: #1a1a1a;
 }
 
 .dark-mode .content {
-    background-color: #333; /* Adicione a cor cinza desejada para a classe content no modo noturno */
+    background-color: #333;
+}
+
+.dark-mode .content #modeLabel{
+    color: #fff
 }
